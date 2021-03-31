@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 
-function Helloworld(props) {
-    return (
-      <div id="hello">
-        {props.texto}
-      </div>
-    )  
-}
+import Header from './components/header.js';
+import Home from './components/home.js';
+import Footer from './components/footer.js';
 
 function App() {
-  return(
-    <div className="App-header">
-      <h2>Probando un saludo.......</h2>
-      <Helloworld texto="Nombre: Juan"/>
-      <Helloworld texto="Apellido: Telis"/>
-      <Helloworld texto="Edad: 22"/>
+  return (
+    <div className="App">
+      
+      <Header />
+     
+      
+      <Home />
+     
+      
+      <Footer />
     </div>
-  )
+  );
+
 }
+
+
   
 
 
