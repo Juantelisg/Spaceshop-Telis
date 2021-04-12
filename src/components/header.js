@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import './styles/header.css';
+import { BsBag } from "react-icons/bs";
 
 
 function Header() {
@@ -11,7 +11,8 @@ function Header() {
             <div className="div-logo">
               <a href="/" className="logo">Logo</a>
             </div>
-
+            
+         
             <div className="div-center-navbar">
               <nav className="center-navbar" >
                 <ul>
@@ -33,7 +34,10 @@ function Header() {
                 <nav className="right-navbar">
                     <ul>
                       <li>
-                        <a  href="/">Shop</a>
+                      <BsBag/>
+                      </li>
+                      <li>
+                      <a  href="/">Shop</a>
                       </li>
                       <li>
                         <a  href="/">Log In</a>

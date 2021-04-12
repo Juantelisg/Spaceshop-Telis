@@ -1,3 +1,9 @@
+* {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 .header-menu {
  
     display: flex;
@@ -6,52 +12,51 @@
     min-height: 50px;
     align-items: center;
     background-color:  #282c34;
-  }
+    padding-top: 0.5rem;
+}
   
-  .div-logo a {
+.div-logo a {
     background-color:  #282c34;
    
-  }
+}
   
-  .logo {
+.logo {
     font-size: 30px;
     text-decoration: none;
     padding: 0.4rem 2rem;
     color: whitesmoke;
-  }
+}
   
   
-  .center-navbar ul {
+.center-navbar ul {
     list-style: none;
     display: flex;
     padding: 0 1.5rem;
     background-color:  #282c34;
-  }
+}
   
-  .center-navbar a {
+.center-navbar a {
     font-size: 20px;
     text-decoration: none;
     padding: 0.5rem;
-    font-weight: lighter;
     color: whitesmoke;
     background-color: #282c34 ;
-  }
+}
   
   
-  .right-navbar ul {
+.right-navbar ul {
     list-style: none;
     display: flex;
     padding: 0 1rem;
     background-color:  #282c34;
     
-  }
+}
   
-  .right-navbar a {
+.right-navbar a {
     font-size: 20px;
     text-decoration: none;
     padding: 0.5rem;
-    font-weight:lighter;
     color: whitesmoke;
     background-color:  #282c34;
-  }
+}
   

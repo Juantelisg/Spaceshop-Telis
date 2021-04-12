@@ -5,4 +5,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.footer-left-icons {
+    padding: 0 1.5rem;
+    display: flex;
+}
+
+.footer-right-icons {
+    padding: 0 1.5rem;
+    margin: 0 0.5rem;
+    display: flex;
+}
+
+.iconAppStore {
+    padding: 0 0.6rem;
+}
+
+.iconInstagram {
+    padding: 0 0.6rem;
+}
+
+.iconFacebook {
+    padding: 0 0.6rem;
+}
+
+.iconTwitter {
+    padding: 0 0.6rem;
 }

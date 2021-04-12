@@ -1,9 +1,11 @@
-
+* {
+   color: whitesmoke;
+}
 .home {
    min-height: 25rem;
    display: flex;
    align-items: center;
    justify-content: center;
-
-  }
+  
+}
   
