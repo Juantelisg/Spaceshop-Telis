@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* import logo, { ReactComponent } from './logo.svg'; */
 import React, { Component } from 'react';
 import './App.css';
@@ -22,6 +23,31 @@ class App extends Component {
   
 
 
+=======
+import React from 'react';
+import './App.css';
 
+import Header from './components/header.js';
+import Home from './components/home.js';
+import Footer from './components/footer.js';
+
+
+function App() {
+  return (
+    <div className="App">
+      
+      
+      <Header />
+      
+      
+      <Home />
+     
+      
+      <Footer />
+    </div>
+  );
+>>>>>>> a68d50442317ddb050747bd69250add5802d4055
+
+}
 
 export default App;
