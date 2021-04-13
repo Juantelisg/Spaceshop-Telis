@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/header.css';
-import { BsBag } from "react-icons/bs";
+import CartIcon from './cartWidget.js';
 
 
 function Header() {
@@ -34,10 +34,10 @@ function Header() {
                 <nav className="right-navbar">
                     <ul>
                       <li>
-                      <BsBag/>
+                        <CartIcon/>
                       </li>
                       <li>
-                      <a  href="/">Shop</a>
+                        <a  href="/">Shop</a>
                       </li>
                       <li>
                         <a  href="/">Log In</a>
