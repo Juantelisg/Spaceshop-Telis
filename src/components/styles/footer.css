@@ -5,32 +5,47 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(218, 218, 218);
 
 }
 
 .footer-left-icons {
     padding: 0;
     display: flex;
+    background-color: rgb(218, 218, 218);
 }
 
 .footer-right-icons {
     padding: 0;
-    margin: 0 0.5rem;
     display: flex;
+    background-color: rgb(218, 218, 218);
+   
+}
+
+.div-icon-footer {
+    background-color: rgb(218, 218, 218);
 }
 
 .iconAppStore {
     padding: 0 0.6rem;
+    background-color: rgb(218, 218, 218);
 }
 
 .iconInstagram {
     padding: 0 0.6rem;
+    background-color: rgb(218, 218, 218);
 }
 
 .iconFacebook {
     padding: 0 0.6rem;
+    background-color: rgb(218, 218, 218);
 }
 
 .iconTwitter {
     padding: 0 0.6rem;
+    background-color: rgb(218, 218, 218);
+}
+
+.iconGooglePlay {
+    background-color: rgb(218, 218, 218);
 }

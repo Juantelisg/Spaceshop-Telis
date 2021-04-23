@@ -23,4 +23,38 @@ function App() {
 
 }
 
+/* const task = new Promise((resolve, reject)=> {
+  const objetos = [
+    {
+      id: 'zed',
+      value: '$300'
+    },
+    {
+      id: 'ashe',
+      value: '$500'
+    }
+  ]
+  resolve(true)
+})
+
+task.then((res)=>{
+  console.log("resuelta-------->", res)
+  throw new Error()
+  console.log("esto nunca va a suceder")
+}, (rej)=>{
+  console.log("rechazada ---->", rej)
+})
+.then(()=>{
+  console.log("segundo then")
+})
+.catch((err)=>{
+  console.log("hubo un error")
+})
+.finally(()=>{
+  console.log("por fin termine")
+})
+
+
+*/
 export default App;
+ 

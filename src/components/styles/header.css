@@ -1,7 +1,4 @@
-* {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 
 
 .header-menu {
@@ -11,12 +8,16 @@
     width: 100%;
     min-height: 50px;
     align-items: center;
-    background-color:  #282c34;
+    background-color:  #343a40;
     padding-top: 0.5rem;
+    border-bottom: 1px solid #343a40;
+    font-family: sans-serif;
+   
+
 }
   
 .div-logo a {
-    background-color:  #282c34;
+    background-color:  #343a40;
    
 }
   
@@ -40,15 +41,15 @@
     text-decoration: none;
     padding: 0.5rem;
     color: whitesmoke;
-    background-color: #282c34 ;
+    background-color: #343a40 ;
 }
   
   
-.right-navbar ul {
+/* .right-navbar ul {
     list-style: none;
     display: flex;
     padding: 0 1rem;
-    background-color:  #282c34;
+    background-color:  #343a40;
     
 }
   
@@ -57,6 +58,6 @@
     text-decoration: none;
     padding: 0.5rem;
     color: whitesmoke;
-    background-color:  #282c34;
-}
+    background-color:  #343a40;
+} */
   

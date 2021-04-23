@@ -13,10 +13,10 @@ import {FaFacebookSquare} from "react-icons/fa"
 function LeftIcons(props) {
     return (
         <div className="footer-left-icons">
-            <div>
+            <div className="div-icon-footer">
                 <FaAppStore className="iconAppStore"/>
             </div>
-            <div>
+            <div className="div-icon-footer">
                 <FaGooglePlay className="iconGooglePlay"/>    
             </div>
         </div>
@@ -26,14 +26,14 @@ function LeftIcons(props) {
 function RightIcons() {
     return(
         <div className="footer-right-icons">
-            <div>
+            <div className="div-icon-footer">
                 <FaInstagram className="iconInstagram"/>            
             </div>
             
-            <div>
+            <div className="div-icon-footer">
                 <FaFacebookSquare className="iconFacebook"/>
             </div>
-            <div>
+            <div className="div-icon-footer">
                 <FaTwitter className="iconTwitter"/>
             </div>
         </div>

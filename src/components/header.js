@@ -9,35 +9,19 @@ function Header() {
         <div className="header-menu">
              
             <div className="div-logo">
-              <a href="/" className="logo">Logo</a>
+              <a href="/" className="logo">Spaceshop</a>
             </div>
-            
-         
-            <div className="div-center-navbar">
-              <nav className="center-navbar" >
-                <ul>
-                  <li>
-                    <a href="/">Movies</a>
-                  </li>
-                  <li>
-                    <a  href="/">Series</a>
-                  </li>
-                  <li>
-                    <a href="/">Games</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+        
 
 
             <div className="div-right-navbar">
                 <nav className="right-navbar">
-                    <ul>
+                    <ul >
                       <li>
                         <CartIcon/>
                       </li>
                       <li>
-                        <a  href="/">Shop</a>
+                        <a  href="/">Productos</a>
                       </li>
                       <li>
                         <a  href="/">Log In</a>
@@ -50,5 +34,9 @@ function Header() {
     </div>
    );
 }
+
+
+
+
 
 export default Header;

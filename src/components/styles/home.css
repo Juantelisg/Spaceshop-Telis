@@ -1,11 +1,6 @@
-* {
-   color: whitesmoke;
-}
-.home {
-   min-height: 25rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.home-h4{
+  
+   text-align: center;
   
 }
   
