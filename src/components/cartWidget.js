@@ -4,7 +4,7 @@ import { BsBag } from "react-icons/bs";
 
 function CartIcon() {
     return(
-        <BsBag/>
+        <BsBag style={{position: 'absolute', right: '2rem'}}/>
     );
 }
 

@@ -5,38 +5,34 @@ import CartIcon from './cartWidget.js';
 
 function Header() {
     return(
-    <div className="header">
-        <div className="header-menu">
-             
-            <div className="div-logo">
-              <a href="/" className="logo">Spaceshop</a>
-            </div>
-        
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <a className="navbar-brand logo" href="#">SpaceShop</a>
 
-
-            <div className="div-right-navbar">
-                <nav className="right-navbar">
-                    <ul >
-                      <li>
-                        <CartIcon/>
-                      </li>
-                      <li>
-                        <a  href="/">Productos</a>
-                      </li>
-                      <li>
-                        <a  href="/">Log In</a>
-                      </li>
-                    </ul>
-                </nav>
-            </div>
- 
-        </div>
-    </div>
+           
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          
+              <div className="collapse navbar-collapse" style={{ justifyContent: 'center'}}>
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Productos</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
+                    <li classNameName="nav-item" style={{listStyle: 'none', display: 'flex', alignItems: 'center'}}>
+                      <CartIcon/>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
    );
 }
-
-
-
-
 
 export default Header;

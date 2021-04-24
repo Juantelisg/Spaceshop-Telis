@@ -13,13 +13,11 @@ function Welcome(props) {
     )
 }
 
-
-
 function Home() {
     return(
         <div className="home" style={{padding: '2rem 10rem'}}>
             <div>
-                <Welcome greetings="Bienvenido"/>
+                <Welcome/>
             </div>
            
            <div>

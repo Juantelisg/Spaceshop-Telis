@@ -7,35 +7,29 @@ import {FaAppStore} from "react-icons/fa"
 import {FaTwitter} from "react-icons/fa"
 import {FaFacebookSquare} from "react-icons/fa"
 
+function Icons() {
+    return(
+        <div className="div-Icons" >
 
-
-
-function LeftIcons(props) {
-    return (
-        <div className="footer-left-icons">
-            <div className="div-icon-footer">
-                <FaAppStore className="iconAppStore"/>
-            </div>
-            <div className="div-icon-footer">
+            <div className="icon-footer">
                 <FaGooglePlay className="iconGooglePlay"/>    
             </div>
-        </div>
-    )
-}
 
-function RightIcons() {
-    return(
-        <div className="footer-right-icons">
-            <div className="div-icon-footer">
+            <div className="icon-footer">
+                <FaAppStore className="iconAppStore"/>
+            </div>
+
+            <div className="icon-footer">
                 <FaInstagram className="iconInstagram"/>            
             </div>
             
-            <div className="div-icon-footer">
+            <div className="icon-footer">
                 <FaFacebookSquare className="iconFacebook"/>
             </div>
-            <div className="div-icon-footer">
+            <div className="icon-footer">
                 <FaTwitter className="iconTwitter"/>
             </div>
+
         </div>
     )
 }
@@ -44,13 +38,7 @@ function RightIcons() {
 function Footer() {
     return (
         <div className="footer">
-            <div>
-                <LeftIcons/>
-            </div>
-            
-            <div >
-                <RightIcons/>
-            </div>
+            <Icons/>
         </div>
     );
     
