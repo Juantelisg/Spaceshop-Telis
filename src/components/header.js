@@ -1,38 +1,18 @@
-import React, { Component } from 'react';
-import './styles/header.css';
-import CartIcon from './cartWidget.js';
-
+import React from 'react';
 
 function Header() {
-    return(
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-            <a className="navbar-brand logo" href="#">SpaceShop</a>
-
-           
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-          
-              <div className="collapse navbar-collapse" style={{ justifyContent: 'center'}}>
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Productos</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
-                    </li>
-                    <li classNameName="nav-item" style={{listStyle: 'none', display: 'flex', alignItems: 'center'}}>
-                      <CartIcon/>
-                    </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-   );
+    return (
+        <header class="bg-primary py-5 mb-5">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 text-white mt-5 mb-2">Bienvenido a Space Shop</h1>
+                        <p class="lead mb-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus ab labore provident mollitia. Id assumenda voluptate earum corporis facere quibusdam quisquam iste ipsa cumque unde nisi, totam quas ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </header>   
+    )
 }
 
 export default Header;

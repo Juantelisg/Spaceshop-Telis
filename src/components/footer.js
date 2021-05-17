@@ -7,29 +7,39 @@ import {FaAppStore} from "react-icons/fa"
 import {FaTwitter} from "react-icons/fa"
 import {FaFacebookSquare} from "react-icons/fa"
 
+const icons = [
+    {
+        id: 1, 
+        name: <FaGooglePlay/>
+    },
+    {
+        id: 2, 
+        name: <FaAppStore/>
+    },
+    {
+        id: 3, 
+        name: <FaInstagram/>
+    },
+    {
+        id: 4, 
+        name: <FaFacebookSquare/>
+    },
+    {
+        id: 5, 
+        name: <FaTwitter/>
+    }
+]
+
 function Icons() {
     return(
-        <div className="div-Icons" >
-
-            <div className="icon-footer">
-                <FaGooglePlay className="iconGooglePlay"/>    
+        <div >
+            <div>
+                {
+                    icons.map(i =>(
+                        <a id={i.id} style={{padding: '1rem', color: 'white'}}>{i.name}</a>
+                    ))
+                } 
             </div>
-
-            <div className="icon-footer">
-                <FaAppStore className="iconAppStore"/>
-            </div>
-
-            <div className="icon-footer">
-                <FaInstagram className="iconInstagram"/>            
-            </div>
-            
-            <div className="icon-footer">
-                <FaFacebookSquare className="iconFacebook"/>
-            </div>
-            <div className="icon-footer">
-                <FaTwitter className="iconTwitter"/>
-            </div>
-
         </div>
     )
 }
@@ -37,8 +47,13 @@ function Icons() {
 
 function Footer() {
     return (
-        <div className="footer">
-            <Icons/>
+        <div>
+            <footer class="py-5 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white"></p>
+                    <Icons/>
+                </div>
+            </footer>
         </div>
     );
     

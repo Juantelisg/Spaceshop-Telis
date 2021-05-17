@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Header from './components/header.js';
+import NavBar from './components/navbar.js';
 import Home from './components/home.js';
 import Footer from './components/footer.js';
 
@@ -9,31 +9,15 @@ import Footer from './components/footer.js';
 function App() {
   return (
     <div className="App">
-      
-      
-      <Header />
-      
-      
+      <NavBar />
       <Home />
-     
-      
       <Footer />
     </div>
   );
 
 }
 
-/* const task = new Promise((resolve, reject)=> {
-  const objetos = [
-    {
-      id: 'zed',
-      value: '$300'
-    },
-    {
-      id: 'ashe',
-      value: '$500'
-    }
-  ]
+/* 
   resolve(true)
 })
 

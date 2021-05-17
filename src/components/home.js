@@ -2,26 +2,20 @@ import React from 'react';
 import './styles/home.css';
 
 import ListContainer from './itemListContainer.js'
+import Header from './header.js';
+import ImgInfo from './img-info.js';
 
-
-function Welcome(props) {
-    return(
-        <div className="home-h4">
-            <h4>{props.greetings}</h4>
-           
-        </div>
-    )
-}
 
 function Home() {
     return(
-        <div className="home" style={{padding: '2rem 10rem'}}>
+        <div className="home">
             <div>
-                <Welcome/>
+                <Header/>
             </div>
            
-           <div>
-                <ListContainer/>
+           <div className="container">
+                <ListContainer/>       
+                <ImgInfo/>                       
            </div>
            
         </div>
