@@ -9,15 +9,15 @@ import ImgInfo from './img-info.js';
 function Home() {
     return(
         <div className="home">
-            <div>
-                <Header/>
+           <Header/>
+           <div className="container" style={{marginBottom: '1rem'}}>
+                <div style={{marginTop: '2rem'}}>
+                    <ListContainer/>
+                </div>
+                <div>
+                    <ImgInfo/>      
+                </div>                                        
             </div>
-           
-           <div className="container">
-                <ListContainer/>       
-                <ImgInfo/>                       
-           </div>
-           
         </div>
     );
 }
