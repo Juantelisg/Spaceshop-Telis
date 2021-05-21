@@ -3,12 +3,13 @@ import DivCamisas from './indumentaria.js';
 import DivAccesorios from './accesorios.js';
 import DivTelescopios from './telescopios.js';
 import DivCovid19 from './covid.js';
+import DivOfertas from './ofertas.js';
 
 import { IoShirt } from "react-icons/io5";
-import { RiCupFill, RiVirusFill } from "react-icons/ri";
 import { GoTelescope } from "react-icons/go";
 import { MdLocalOffer } from "react-icons/md";
 import { BiHeadphone } from "react-icons/bi";
+import { RiVirusFill } from "react-icons/ri";
 
 
 function ListContainer() {
@@ -16,11 +17,13 @@ function ListContainer() {
   const [showAccesorios, setShowAccesorios] = useState(false)
   const [showTelescopios, setShowTelescopios] = useState(false)
   const [showCovid19, setShowCovid19] = useState(false)
+  const [showOfertas, setShowOfertas] = useState(false)
   
   function divCamisas() {
     setShowCamisas(true)
     setShowAccesorios(false)
     setShowTelescopios(false)
+    setShowOfertas(false)
     setShowCovid19(false)
   }
   
@@ -28,6 +31,7 @@ function ListContainer() {
     setShowAccesorios(true)
     setShowCamisas(false)
     setShowTelescopios(false)
+    setShowOfertas(false)
     setShowCovid19(false)
   }
 
@@ -35,15 +39,27 @@ function ListContainer() {
     setShowTelescopios(true)
     setShowAccesorios(false)
     setShowCamisas(false)
+    setShowOfertas(false)
     setShowCovid19(false)
   }
 
+  function divOfertas() {
+    setShowCamisas(false)
+    setShowAccesorios(false)  
+    setShowTelescopios(false)
+    setShowOfertas(true)
+    setShowCovid19(false)
+  }
+  
   function divCovid19() {
     setShowCamisas(false)
     setShowAccesorios(false)  
     setShowTelescopios(false)
+    setShowOfertas(false)
     setShowCovid19(true)
   }
+
+  
 
   const sectionIcons = [
     {
@@ -67,7 +83,8 @@ function ListContainer() {
     {   
         id: 4,
         icon: <MdLocalOffer size={40}/>,
-        title: 'Telescopios'
+        title: 'Ofertas',
+        funct: divOfertas
     },
     {   
         id: 5,
@@ -117,6 +134,13 @@ return (
               <div>
                 <div className="alert alert-primary" role="alert">Covid-19</div>
                 <DivCovid19 /> 
+              </div>
+              : ""
+            }
+            {showOfertas ?  
+              <div>
+                <div className="alert alert-primary" role="alert">Ofertas</div>
+                <DivOfertas /> 
               </div>
               : ""
             }

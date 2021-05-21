@@ -30,7 +30,7 @@ function Card(props) {
             <div class="col-sm">
                 <div class="card h-100">
                     <img class="card-img-top" src={props.img} style={{width: '100%', height: '320px'}} />
-                   {/*  <div class="card-body">
+                    <div class="card-body">
                         <h4 class="card-title">{props.title}</h4>
                         <p class="card-text"></p>
                     </div>
@@ -38,7 +38,7 @@ function Card(props) {
                         <DeleteItem function={deleted}/>    
                         <div>{contador}</div>                       
                         <AddButton function={add}/>
-                    </div>                     */}
+                    </div>                  
                 </div>
             </div>              
     )
