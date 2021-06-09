@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/footer.css';
+import FormContact from './form-contact'
 
 import { FaInstagram } from "react-icons/fa";
 import {FaGooglePlay} from "react-icons/fa"
@@ -48,10 +49,13 @@ function Icons() {
 function Footer() {
     return (
         <div>
-            <footer class="py-5 bg-dark">
-                <div class="container">
+            <footer className="py-5 bg-dark">
+                <div className="">
+                    <FormContact/>
+                </div>
+                <div className="container">
                     <p class="m-0 text-center text-white"></p>
-                    <Icons/>
+                    <Icons/>                    
                 </div>
             </footer>
         </div>

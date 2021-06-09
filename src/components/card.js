@@ -32,7 +32,7 @@ function Card(props) {
                     <img class="card-img-top" src={props.img} style={{width: '100%', height: '320px'}} />
                     <div class="card-body">
                         <h4 class="card-title">{props.title}</h4>
-                        <p class="card-text"></p>
+                        <p class="card-text">{props.details}</p>
                     </div>
                     <div className="row justify-content-around">
                         <DeleteItem function={deleted}/>    

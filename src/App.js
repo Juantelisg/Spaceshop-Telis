@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter, Switch, Route ,Link} from "react-router-dom"
 
 
 import NavBar from './components/navbar.js';
@@ -9,11 +10,19 @@ import Footer from './components/footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-        <Home />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <div className="App">
+          <NavBar/>
+          <Route path="/home">
+            <Home />
+          </Route> 
+          <Route >   
+            <Footer />  
+          </Route>       
+        </div>
+      </Switch>
+    </BrowserRouter>
   );
 
 }

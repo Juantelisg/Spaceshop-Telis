@@ -1,18 +1,8 @@
 
-.footer {
-
-    min-height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa;
-
+.form {
+    color: white;
 }
 
-.div-Icons {
-    display: flex;
-}
-
-.icon-footer{
-    padding: .3rem .3rem;
+.footer-button {
+    padding: 2rem 0;
 }
